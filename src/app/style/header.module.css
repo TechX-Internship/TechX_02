@@ -1,0 +1,22 @@
+.header {
+    /* width: 90rem; */
+    height: 3.625rem;
+    flex-shrink: 0;
+}
+
+.header .tag {
+    color: #1E144F;
+    font-size: 1.25rem;
+    font-style: normal;
+    /* font-weight: 600; */
+    line-height: normal;
+}
+
+.header .tag2 {
+    color: #7F7F7F;
+    /* font-family: Poppins; */
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
