@@ -1,5 +1,10 @@
 import { Poppins } from "next/font/google";
-import MainWeb from "./pages/page";
+import MainBanner from "./(homepage)/mainbanner";
+import About from "@/components/About";
+import AboutDsc from "@/components/AboutDsc";
+import Consulting from "@/components/consulting";
+import Say from "@/components/says";
+import Articals from "@/components/Articals";
 
 const poppin = Poppins({
   subsets: ['latin'],
@@ -9,7 +14,12 @@ const poppin = Poppins({
 export default function Home() {
   return (
     <main className={`${poppin.className}`}>
-      <MainWeb />
+      <MainBanner />
+      <About state={true} />
+      <AboutDsc />
+      <Consulting />
+      <Say />
+      <Articals />
     </main>
   )
 }
