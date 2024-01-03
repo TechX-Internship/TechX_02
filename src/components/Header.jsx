@@ -19,18 +19,16 @@ const Header = () => {
           </div>
           <div className='d-flex justify-content-between align-items-center'>
             <ul className='d-flex gap-4 mb-0'>
-              <li><Link href="/" className={`${style.tag} ${pathname === '/' ? 'font-bold' : 'fw-light'} `}>Home</Link></li>
-              <li><Link href="/about" className={`${style.tag} fw-light `}>About Us</Link></li>
-              <li><Link href="" className={`${style.tag} fw-light `}>Services</Link></li>
-              <li><Link href="" className={`${style.tag} fw-light `}>Team</Link></li>
-              <li><Link href="" className={`${style.tag} fw-light `}>Blog</Link></li>
-              <li><Link href="" className={`${style.tag} fw-light `}>Gallery</Link></li>
-              <li><Link href="" className={`${style.tag} fw-light `}>FAQ's</Link></li>
-              <li><Link href="" className={`${style.tag} fw-light `}>Contact Us</Link></li>
+              <li><Link href="/" className={`${style.tag} ${pathname === '/' ? 'font-bold active' : 'fw-light'} `}>Home</Link></li>
+              <li><Link href="/about" className={`${style.tag} ${pathname === '/about' ? 'font-bold active' : 'fw-light'} `}>About Us</Link></li>
+              <li><Link href="/service" className={`${style.tag} ${pathname === '/service' ? 'font-bold active' : 'fw-light'} `}>Services</Link></li>
+              <li><Link href="" className={`${style.tag} fw-light `}>Reviews</Link></li>
+              <li><Link href="/blog" className={`${style.tag} ${pathname === '/blog' ? 'font-bold active' : 'fw-light'} `}>Blog</Link></li>
+              <li><Link href="/contact" className={`${style.tag} ${pathname === '/contact' ? 'font-bold active' : 'fw-light'} `}>Contact Us</Link></li>
             </ul>
           </div>
           <div>
-            <Button props={'Get a Appointment'} status={true}/>
+            <Button props={'Get a Appointment'} status={true} />
           </div>
         </div>
       </div>

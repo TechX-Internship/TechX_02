@@ -5,6 +5,8 @@ import AboutDsc from "@/components/AboutDsc";
 import Consulting from "@/components/consulting";
 import Say from "@/components/says";
 import Articals from "@/components/Articals";
+import AccordionList from "./(homepage)/accordionList";
+import Contact from "@/components/contact";
 
 const poppin = Poppins({
   subsets: ['latin'],
@@ -15,11 +17,13 @@ export default function Home() {
   return (
     <main className={`${poppin.className}`}>
       <MainBanner />
-      <About state={true} />
+      <About status={true} />
       <AboutDsc />
-      <Consulting />
+      <Consulting status={true} />
       <Say />
-      <Articals />
+      <Articals status={false}/>
+      <AccordionList />
+      <Contact />
     </main>
   )
 }

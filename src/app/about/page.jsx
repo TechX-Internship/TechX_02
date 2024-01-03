@@ -1,8 +1,19 @@
 import React from 'react'
+import MainBanner from '../(homepage)/mainbanner'
+import About from '@/components/About'
+import Vision from './vision'
+import AboutDsc from '@/components/AboutDsc'
+import Contact from '@/components/contact'
 
 const page = () => {
   return (
-    <div>About</div>
+    <>
+      <MainBanner title={'About Us'} />
+      <About />
+      <Vision />
+      <AboutDsc />
+      <Contact />
+    </>
   )
 }
 

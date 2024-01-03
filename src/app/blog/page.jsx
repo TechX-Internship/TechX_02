@@ -1,8 +1,13 @@
 import React from 'react'
+import MainBanner from '../(homepage)/mainbanner'
+import Articals from '@/components/Articals'
 
 const page = () => {
   return (
-    <div>Blog</div>
+    <>
+      <MainBanner title={'Blog'} />
+      <Articals status={true} />
+    </>
   )
 }
 

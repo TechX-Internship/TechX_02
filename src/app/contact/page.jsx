@@ -1,8 +1,13 @@
 import React from 'react'
+import MainBanner from '../(homepage)/mainbanner'
+import ContactPage from './contactPage'
 
 const page = () => {
   return (
-    <div>Contact</div>
+    <>
+      <MainBanner title={'Contact Us'} />
+      <ContactPage />
+    </>
   )
 }
 

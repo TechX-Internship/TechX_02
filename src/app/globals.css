@@ -20,11 +20,16 @@
   text-decoration: none !important;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  transition: all .5sec ease-in-out;
 }
 
 .container {
   min-width: 88rem !important;
   max-width: 88rem !important;
+}
+
+.active {
+  border-bottom: 2px solid #1E144F;
 }
 
 /* body {

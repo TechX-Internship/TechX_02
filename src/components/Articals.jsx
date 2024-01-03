@@ -1,7 +1,9 @@
 import React from 'react'
 import style from '@/app/style/text.module.css'
+import Button from './Button'
+import Blogs from '@/app/blog/blogs'
 
-const Articals = () => {
+const Articals = ({ status }) => {
     return (
         <section className='py-16'>
             <div className='container'>
@@ -21,8 +23,8 @@ const Articals = () => {
                                         <img src={`./assets/Ui03.png`} alt="" />
                                     </div>
                                     <div className="col-6  flex justify-center flex-col">
-                                        <p className={`${style.SubTitle} border-0 m-0`} style={{ fontSize: '1.5rem' }}>Jesiu Petit</p>
-                                        <span className={`${style.span}`}>Heart Patient</span>
+                                        <p className={`${style.SubTitle} border-0 m-0`} style={{ fontSize: '1.5rem' }}>Skylar Septimus</p>
+                                        <span className={`${style.span} text-muted`}>homeopathic</span>
                                     </div>
                                 </div>
                             </div>
@@ -40,8 +42,8 @@ const Articals = () => {
                                         <img src={`./assets/Ui04.png`} alt="" />
                                     </div>
                                     <div className="col-6  flex justify-center flex-col">
-                                        <p className={`${style.SubTitle} border-0 m-0`} style={{ fontSize: '1.5rem' }}>Jesiu Petit</p>
-                                        <span className={`${style.span}`}>Heart Patient</span>
+                                        <p className={`${style.SubTitle} border-0 m-0`} style={{ fontSize: '1.5rem' }}>Maren Botosh</p>
+                                        <span className={`${style.span} text-muted`}>homeopathic</span>
                                     </div>
                                 </div>
                             </div>
@@ -59,14 +61,23 @@ const Articals = () => {
                                         <img src={`./assets/Ui05.png`} alt="" />
                                     </div>
                                     <div className="col-6  flex justify-center flex-col">
-                                        <p className={`${style.SubTitle} border-0 m-0`} style={{ fontSize: '1.5rem' }}>Jesiu Petit</p>
-                                        <span className={`${style.span}`}>Heart Patient</span>
+                                        <p className={`${style.SubTitle} border-0 m-0`} style={{ fontSize: '1.5rem' }}>Tiana Donin</p>
+                                        <span className={`${style.span} text-muted`}>homeopathic</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+                </div>
+                {
+                    status === true ? <Blogs /> : ''
+                }
+                {
+                    status === true ? <Blogs /> : ''
+                }
+                <div className="d-flex justify-content-center">
+                    <Button props={'View More'} status={true} />
                 </div>
             </div>
         </section>

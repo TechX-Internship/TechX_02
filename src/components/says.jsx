@@ -2,10 +2,10 @@ import React from 'react'
 import style from '@/app/style/text.module.css'
 const Say = () => {
     return (
-        <section className={`${style.bg01} py-16`}>
+        <section className={`py-16`}>
             <div className="container">
                 <div className="row">
-                    <div className={`${style.bgGra1} col-6 relative flex flex-col justify-center`} style={{ padding: '0 5rem' }}>
+                    <div className={`${style.bgGra1} col-5 relative flex flex-col justify-center`} style={{ padding: '0 5rem' }}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="213" height="159" viewBox="0 0 213 159" fill="none">
                             <g opacity="0.1" clipPath="url(#clip0_97_619)">
                                 <path d="M213 86.0568H161.338C162.221 48.4053 172.9 44.1313 186.313 42.9114L191.485 42.2702V0.868637L185.523 1.18814C168.009 2.17354 148.645 5.33087 135.726 21.279C124.402 35.2595 119.409 58.1 119.409 93.1622V158.133H213V86.0568ZM93.5909 158.133V86.0568H42.6183C43.5015 48.4053 53.8352 44.1313 67.2477 42.9114L72.0757 42.2702V0.868637L66.4581 1.18814C48.9437 2.17354 29.4069 5.33087 16.4881 21.279C5.1647 35.2595 -1.52588e-05 58.1 -1.52588e-05 93.1622V158.133H93.5909Z" fill="#1E144F" />
@@ -31,8 +31,8 @@ const Say = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-6 d-flex">
-                        <div className="row justify-center items-center">
+                    <div className="col-7 d-flex">
+                        <div className="row justify-center items-center ms-3">
                             <div className="col-6">
                                 <div className="card p-2">
                                     <p className={`${style.Dsc}`}>
@@ -42,9 +42,9 @@ const Say = () => {
                                         <div className={`col-3 ${style.img}`}>
                                             <img src={`./assets/Ui02.png`} alt="" />
                                         </div>
-                                        <div className="col-6  flex justify-center flex-col">
+                                        <div className="col-6  flex justify-center flex-col ps-2">
                                             <p className={`${style.SubTitle} border-0 m-0`} style={{ fontSize: '1.5rem' }}>Jesiu Petit</p>
-                                            <span className={`${style.span}`}>Heart Patient</span>
+                                            <span className={`${style.span} text-muted`}>Heart Patient</span>
                                         </div>
                                         <div className="col-3 flex items-center"><h4 className='text-muted'>#01</h4></div>
                                     </div>
@@ -59,9 +59,9 @@ const Say = () => {
                                         <div className={`col-3 ${style.img}`}>
                                             <img src={`./assets/Ui01.png`} alt="" />
                                         </div>
-                                        <div className="col-6 flex justify-center flex-col">
+                                        <div className="col-6 flex justify-center flex-col ps-2">
                                             <p className={`${style.SubTitle} border-0 m-0`} style={{ fontSize: '1.5rem' }}>Jesiu Petit</p>
-                                            <span className={`${style.span}`}>Heart Patient</span>
+                                            <span className={`${style.span} text-muted`}>Heart Patient</span>
                                         </div>
                                         <div className="col-3 flex items-center">
                                             <h4 className='text-muted'>

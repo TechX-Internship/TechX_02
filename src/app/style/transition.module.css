@@ -1,0 +1,39 @@
+.hover .card:hover {
+    background: #1E144F;
+}
+
+.hover .card:hover p {
+    color: white;
+}
+
+.hover .card p span svg {
+    fill: #1E144F;
+}
+
+.hover .card:hover p span svg {
+    fill: white;
+}
+
+.hover .card:hover div {
+    color: white;
+}
+
+.hover .card .icon {
+    border: .2rem solid #1E144F;
+}
+
+.hover .card:hover .icon {
+    border: .2rem solid white;
+}
+
+.hover .card .icon svg {
+    fill: #1E144F;
+}
+
+.hover .card:hover .icon svg path {
+    fill: white;
+}
+
+/* .hover .card:hover .btn {
+   
+} */

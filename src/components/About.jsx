@@ -2,7 +2,7 @@ import React from 'react'
 import style from '@/app/style/text.module.css'
 import Button from './Button'
 
-const About = ({ state }) => {
+const About = ({ status }) => {
     return (
         <section className={`container py-20`}>
             <div className="row">
@@ -64,11 +64,9 @@ const About = ({ state }) => {
                             Cras interdum sagittis diam eget maximus.
                         </li>
                     </ul>
-                    {
-                        state ? <div className="mt-3">
-                            <Button props={'Read More'} status={true} />
-                        </div> : ''
-                    }
+                    <div className="mt-3">
+                        <Button props={'Read More'} status={status} />
+                    </div>
                 </div>
             </div>
         </section>

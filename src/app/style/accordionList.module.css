@@ -1,0 +1,38 @@
+.accordion h2 {
+    color: var(--Blue, #1E144F);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+
+.accordion p {
+    color: #7F7F7F;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.myaccordion {
+    margin-bottom: 30px;
+}
+
+.myaccordion button {
+    color: var(--Blue, #1E144F);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.myaccordion p {
+    color: #7F7F7F;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
